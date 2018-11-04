@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Bienvenu sur le site du n° 1 en courtage assurance</h2>
+  <p>
+    Nous permettons aux entreprises de commercer avec confiance. Notre connaissance unique des sociétés, des industries
+    et des pays aide les clients à prendre des décisions d'affaires éclairées sans compromettre pas leurs résultats.
+    Nos services permettent aux entreprises de choisir les bons clients et marchés, en protégeant leur santé financière
+    et leur trésorerie de pertes sur créances irrécouvrables.
+  </p>
+<!-- <img src="https://www.lemoniteur.fr/mediatheque/9/2/1/000923129_620x393_c.jpg" alt=""> -->
+
+
+</div>
+
+<ngb-carousel *ngIf="images"> 
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide">
+      <!-- <div class="carousel-caption"> -->
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <!-- </div> -->
+    </ng-template>
+  </ngb-carousel>

@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Customers</h1>
+    <table class="table table-striped">
+      <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Status</th>
+          <th>Activate/Desactivate</th>
+          <th>Delete</th>
+      </thead>
+      <tbody>
+    <!-- <div *ngFor="let customer of customers | async" style="width: 300px;"> -->
+      <!-- <customer-details [customer]='customer'></customer-details> -->
+    
+          <tr *ngFor="let customer of customers | async" style="width: 300px;">
+              <td> {{customer.name}}</td>
+              <td>{{customer.age}}</td>
+              <td>{{customer.active}}</td>
+              <td>
+                <span class="button is-small btn-primary" *ngIf='customer.active' (click)= 'updateActive(false, customer)'>Inactive</span>
+     
+                <span class="button is-small btn-primary" *ngIf='!customer.active' (click)= 'updateActive(true, customer)'>Active</span>
+              </td>
+              <td>  <span class="button is-small btn-danger" (click)= 'deleteCustomer(customer)'>Delete</span></td>
+          </tr>
+    
+    <!-- </div> -->
+    </tbody>
+    </table>
+    
+    
+
+    <div>
+      <button type="button" style="margin:5px;" class="btn btn-danger" (click)='deleteCustomers()'>Tout supprimer</button>
+      <a routerLink="add" style="margin:5px;" class="btn btn-primary active" role="button" routerLinkActive="active">Ajouter un utilisateur</a>
+    </div>
+    
+    </div>
