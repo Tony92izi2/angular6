@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///src/assets/script.js"],"names":[],"mappings":"AAAA;AACA;AACA,IAAI;;AAEJ,oB","file":"scripts.js","sourcesContent":["// $('#blogCarousel').carousel({\r\n//     interval: 5000\r\n// });\r\n\r\n// alert('antoine');"],"sourceRoot":""}

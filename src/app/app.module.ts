@@ -23,7 +23,8 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'references', component: ReferencesComponent },
   { path: 'customers', component: CustomerListComponent },
-  { path: 'customers/add', component: CreateCustomerComponent }
+  { path: 'customers/add', component: CreateCustomerComponent },
+  { path: '**', component: MainpageComponent }
 ];
 
 @NgModule({
@@ -50,4 +51,6 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
